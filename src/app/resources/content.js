@@ -1,16 +1,16 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Kunal",
+  lastName: "Rawat",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Senior Software Engineer",
+  avatar: "/images/avatar.png",
+  email: "kunalrawat425@gmail.com",
+  location: "Mumbai, India",
+  languages: ["English", "Hindi"],
 };
 
 const newsletter = {
@@ -18,34 +18,27 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
+      I occasionally write about software engineering, technology, and share thoughts on the intersection of
       creativity and engineering.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://linkedin.com/in/kunalrawat425",
   },
   {
     name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
+    icon: "mail",
+    link: "mailto:kunalrawat425@gmail.com",
+  },
+  {
+    name: "Phone",
+    icon: "phone",
+    link: "tel:+919870619974",
   },
 ];
 
@@ -63,7 +56,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm Kunal, a Senior Software Engineer, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -76,122 +69,146 @@ const about = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
     display: true,
+    src: "/images/avatar.png",
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "https://calendly.com/kunalrawat",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
+        Kunal is a Mumbai-based Senior Software Engineer with a passion for transforming complex challenges
+        into simple, elegant design solutions. His work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Professional Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Sky2c - Mumbai, India",
+        role: "Senior Software Engineer",
+        timeframe: "Nov 2024 - March 2025",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          "Deployed auto-scaling for containerised applications using AWS ECS, ECR, and Fargate, optimising resource efficiency by 50% and leading the migration in real-time traffic.",
+          "Migrated backend from AWS EC2 instances to ECS, enhancing scalability and reducing infrastructure costs by 30%",
+          "Constructed a centralised Document Hub for users and internal teams, reducing the time of the operational team by 80%, streamlining API documentation for frontend developers and testing using Nestjs, Postman and Swagger.",
+          "Orchestrated CI/CD pipelines via GitHub Actions, improving deployment efficiency by 20% and enabling faster feature rollouts."
         ],
         images: [],
       },
+      {
+        company: "Fydaa - Mumbai, India",
+        role: "Lead Backend Engineer",
+        timeframe: "May 2023 - Nov 2024",
+        achievements: [
+          "Architected and transitioned a monolithic application to a microservices-based system using Nestjs and Docker, achieving 99.9% uptime.",
+          "Maximised server response times by 40% and increased concurrent user handling capacity by 50% by revamping microservices architecture.",
+          "Led a cross-functional team in refactoring the legacy codebase, reducing bug reports and boosting system performance by 20%.",
+          "Shipped all the features(payments, login and onboarding) with NESTJS API and React and Next dashboard, with better timelines, guided the juniors and managed the stakeholder expectations.",
+          "Researched and delivered a hierarchical referral system for an internal team with Dashboard, DB design and API contracts with NEXT, Nestjs and Mongodb."
+        ],
+        images: [],
+      },
+      {
+        company: "Vamstar - Hyderabad, India",
+        role: "Senior Software Engineer",
+        timeframe: "May 2022 - May 2023",
+        achievements: [
+          "Refactored signup and login flows, enhancing user experience by 15% with React and TypeScript.",
+          "Optimised Elasticsearch queries, reducing query execution time by 65%, accelerating search results.",
+          "Structured, scalable data models for Nosql databases (Dynamodb and Mongodb) for the S3 Storage feature.",
+          "Crafted APIS with Graphql and caching for frontend teams with TypeScript.",
+          "Rolled out AWS Lambda with Dynamodb streams to process updates on scale."
+        ],
+        images: [],
+      },
+      {
+        company: "Promodome Digital - Mumbai, India",
+        role: "Senior Web Application Developer",
+        timeframe: "Nov 2020 - May 2022",
+        achievements: [
+          "Enhanced core platform functionalities, improving user experience for high-value clients.",
+          "Resolved critical payment issues, boosting customer trust and platform retention.",
+          "Developed a scalable REST API-based and SPA dashboard with Postman documentation, deployed on AWS EC2 and Load Balancer.",
+          "Executed critical CRON jobs for sales & order acquisition, increasing user retention and sales by 30%."
+        ],
+        images: [],
+      },
+      {
+        company: "Yocket - Mumbai, India",
+        role: "Senior Web Application Developer",
+        timeframe: "Mar 2018 - Oct 2020",
+        achievements: [
+          "Promoted to Team Lead, overseeing sprint planning, task prioritisation, and mentoring developers.",
+          "Engineered a cost-efficient notification service processing 100k+ messages per campaign, avoiding server crashes.",
+          "Created paid dashboard features for premium users, delivering data-driven, interactive, and better experiences.",
+          "Revamped user onboarding flows, RESTAPI and better UI with VUE, boosting signup rates and profile completion by 30%."
+        ],
+        images: [],
+      },
+      {
+        company: "Adevole - Mumbai, India",
+        role: "Junior Web Developer",
+        timeframe: "Sep 2017 – Mar 2018",
+        achievements: [
+          "Built and integrated APIS, dashboards, and tools for Shopify, WooCommerce, and Facebook Chat integrations.",
+          "Implemented APIS and dashboard optimisation for a client with the Database Optimisation technique.",
+          "Rewritten the feature, with better maintainability with JavaScript, HTML and CSS.",
+          "Constructed the chatbot with Telegram and Facebook Messenger for Flight Booking Service.",
+          "Designed and launched a feature-rich Shopify plugin allowing customizable notifications and calendar preferences."
+        ],
+        images: [],
+      }
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Bachelor of Engineering, Information Technology, Mumbai University",
+        description: "Aug 2013 – Mar 2017"
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Higher Secondary Certificate, R. D. National & W. A. Science College, Mumbai",
+        description: "Jun 2011 – Mar 2013"
       },
+      {
+        name: "Secondary School Certificate, Maharashtra State Board",
+        description: "Jun 2009 – Mar 2011"
+      }
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Frontend",
+        description: "HTML5, CSS3, JavaScript, ES6, NextJS, ReactJS, VueJS."
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Backend",
+        description: "Microservices, NodeJS, Typescript, Nestjs, Expressjs, Lambda serverless, REST, Graphql, Php, Laravel."
       },
+      {
+        title: "Database",
+        description: "Mysql, MongoDB, DynamoDB, ElasticSearch."
+      },
+      {
+        title: "DevOps",
+        description: "AWS, Docker, CI/CD pipelines, ECS, EC2, SNS, SQS."
+      }
     ],
   },
 };

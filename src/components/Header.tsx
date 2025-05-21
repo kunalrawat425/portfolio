@@ -78,8 +78,8 @@ export const Header = () => {
               {routes["/"] && (
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
-              <Line background="neutral-alpha-medium" vert maxHeight="24" />
-              {routes["/about"] && (
+              {/* <Line background="neutral-alpha-medium" vert maxHeight="24" /> */}
+              {/* {routes["/about"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
@@ -146,13 +146,8 @@ export const Header = () => {
                     selected={pathname.startsWith("/gallery")}
                   />
                 </>
-              )}
-              {display.themeSwitcher && (
-                <>
-                  <Line background="neutral-alpha-medium" vert maxHeight="24" />
-                  <ThemeToggle />
-                </>
-              )}
+              )} */}
+
             </Flex>
           </Flex>
         </Flex>
@@ -164,7 +159,12 @@ export const Header = () => {
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
+                          {display.themeSwitcher && (
+                <>
+                  <Line background="neutral-alpha-medium" vert maxHeight="24" />
+                  <ThemeToggle />
+                </>
+              )}
           </Flex>
         </Flex>
       </Flex>
