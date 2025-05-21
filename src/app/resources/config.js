@@ -3,6 +3,7 @@ const baseURL = "https://portfolio-new-seven-lovat-52.vercel.app";
 
 const routes = {
   "/": true,
+
 };
 
 // Enable password protection on selected routes
